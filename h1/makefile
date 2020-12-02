@@ -1,0 +1,13 @@
+all:count b_sort clear
+count: count.o
+	gcc $^ -o $@ -g
+b_sort: b_sort.o
+	gcc $^ -o $@ -g
+# count.o: count.c
+# 	gcc -c count.c
+# b_sort.o: b_sort.c
+# 	gcc -c b_sort.c
+%.o:%.c
+	gcc -c $^
+clear:
+	-rm -f *.o
