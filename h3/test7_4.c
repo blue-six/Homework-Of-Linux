@@ -10,6 +10,7 @@ int main()
     if (p == 0)
     {
         printf("child process is running!\n");
+        printf("child process is end!\n");
     }
     else if (p > 0)
     {

@@ -32,7 +32,7 @@ int main()
     {
         pid_t id = getpid();
         printf("vfork(%d):child process is running!\n", id);
-        printf("vfork(%d):parent->count=%d\n", id, ++count);
+        printf("vfork(%d):child->count=%d\n", id, ++count);
         exit(0);
     }
     else if (p > 0)
