@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-void t2();
-void t3();
+void t2(); //第二问
+void t3(); //第三问
 
 int main(int argc, char *argv[])
 {
@@ -70,4 +70,5 @@ void t3()
     scanf("%s", string);
     for (i = 0; i < strlen(string); i++)
         fputc(string[i], fp);
+    fclose(fp);
 }

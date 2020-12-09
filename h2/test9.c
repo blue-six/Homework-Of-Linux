@@ -3,8 +3,8 @@
 #include <sys/time.h>
 #include <time.h>
 
-void t1();
-void t2();
+void t1(); //第一问
+void t2(); //第二问
 
 int main(int argc, char *argv[])
 {
