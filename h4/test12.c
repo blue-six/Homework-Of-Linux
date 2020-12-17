@@ -151,6 +151,7 @@ int main()
                 break;
             getchar();
         }
+        getchar();
         kill(p, SIGQUIT);
         shmdt(buf);
         shmctl(flg, IPC_RMID, NULL);
