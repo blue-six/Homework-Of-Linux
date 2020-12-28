@@ -70,12 +70,6 @@ int main(int argc, char **argv)
         close(socket_fd);
         exit(1);
     }
-    // if (read(socket_fd, buffer, 512) == -1)
-    // {
-    //     fprintf(stderr, "Client: Read error:%s\n", strerror(errno));
-    //     close(socket_fd);
-    //     exit(1);
-    // }
     // printf("Client: I heave received:%s\n", buffer);
     pthread_create(&p_r, NULL, thread_R, &socket_fd);
     pthread_create(&p_w, NULL, thread_W, &socket_fd);

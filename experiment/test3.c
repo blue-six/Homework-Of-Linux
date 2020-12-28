@@ -12,8 +12,8 @@ pthread_t t1 = -1, t2 = -1;
 int main()
 {
     printf("main:g_flg=%d\n", g_flg);
-    pthread_create(&t2, NULL, thread_2, NULL);
     pthread_create(&t1, NULL, thread_1, &t2);
+    pthread_create(&t2, NULL, thread_2, NULL);
     pthread_join(t1, NULL);
     pthread_join(t2, NULL);
     puts("main exit");
